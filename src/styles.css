@@ -1,0 +1,254 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+#celsius {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#fahrenheit {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.container {
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 50px auto;
+  outline: 5px solid #dfe9f3;
+  outline-offset: -10px;
+  padding: 20px;
+  display: flex;
+}
+
+.container-left,
+.container-right {
+  flex-basis: 50%;
+  flex-direction: column;
+  width: 400px;
+  height: 100%;
+}
+
+.container-left {
+  position: relative;
+}
+
+.container-right {
+  padding: 10px;
+}
+
+.left_top {
+  color: #fff;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 5;
+}
+
+.current-location {
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.current_date {
+  font-size: 1.4rem;
+}
+
+.current_city {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.current-weather {
+  margin: 15px auto;
+}
+.current-weather_icon i {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 10px;
+}
+
+.current-weather_temp {
+  display: flex;
+  position: relative;
+  font-size: 2.5rem;
+  text-emphasis: -7px;
+  align-items: center;
+  justify-content: center;
+}
+
+.celfah {
+  font-size: 1.5rem;
+}
+
+.fahrenheit {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.current-weather-desc {
+  font-size: 2rem;
+  line-height: 0.9;
+}
+
+.current-infobox {
+  color: #fff;
+  width: 80%;
+  height: auto;
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.15)
+  );
+  margin-top: 15px;
+  padding: 5px;
+  z-index: 6;
+  font-weight: 700;
+}
+
+.current-infobox .info {
+  text-align: left;
+}
+
+.info_details {
+  text-align: right;
+}
+
+.left_bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("./img/sunny.jpg");
+  background-size: cover;
+  background-position: top center;
+  z-index: 1;
+}
+
+.form-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-container input {
+  width: 70%;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+.forecast-wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+  margin: 80px 0;
+}
+
+.forecast-wrapper-title {
+  width: auto;
+  height: auto;
+  background-color: #f8fafc;
+  font-size: 2.5rem;
+  position: absolute;
+  top: -28px;
+  right: 15px;
+  padding: 5px 10px;
+}
+
+.forecast-tmw {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  padding: 5px;
+}
+
+.forecast-tmw-icon {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  padding: 10px;
+}
+
+.forecast-tmw-con {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.forecast-tmw-con h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: -3px;
+  margin-top: 10px;
+}
+
+.forecast-tmw_temp {
+  line-height: 1;
+  font-size: 2rem;
+}
+
+.forecast-nxt-days {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.nxt-day-icon {
+  font-size: 2.3rem;
+}
+
+.forecast-nxt {
+  font-size: 1.6rem;
+}
+
+.forecast .celfar {
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin: 1px;
+  border-radius: none;
+}

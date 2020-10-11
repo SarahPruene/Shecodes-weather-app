@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-left">
+        <div class="row left_top">
+          <div class="row current-location">
+            <h2 class="col-12 current_date" id="current-date">
+              Sunday, 13. September, 2020, 20:22
+            </h2>
+            <h1 class="col-12 current_city" id="current-city">Atlanta, USA</h1>
+          </div>
+          <div class="row current-weather">
+            <div class="col-12 current-weather_icon">
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="col-12 current-weather_temp">
+              <div class="current-temp">18°</div>
+              <span class="celfah">
+                <span>
+                  <button id="celsius">C</button>
+                </span>
+                |
+                <span>
+                  <button id="fahrenheit">F</button>
+                </span>
+              </span>
+            </div>
+            <div class="col-12 current-weather-desc">sunny</div>
+          </div>
+
+          <div class="row current-infobox">
+            <div class="col-6 info" >Feels like:</div>
+            <div class="col-6 info_details" id="precipitation"></div>
+            <div class="col-6 info" >Humandity:</div>
+            <div class="col-6 info_details" id="humandity"></div>
+            <div class="col-6 info">Winds:</div>
+            <div class="col-6 info_details" id="wind"></div>
+          </div>
+        </div>
+        <div class="left_bottom"></div>
+      </div>
+      <div class="container-right">
+        <form action="#" id="form-container">
+          <input
+            type="text"
+            name=""
+            id="city-input"
+            placeholder="Enter your search..."
+          />
+          <button type="submit" class="btn" aria-label="submit search">
+            <i class="fas fa-search"></i>
+          </button>
+          <button type="submit" class="btn search-current">
+            <i class="fas fa-map-marker-alt"></i>
+          </button>
+        </form>
+
+        <div class="forecast-wrapper">
+          <h2 class="forecast-wrapper-title">
+            Forecast
+          </h2>
+          <div class="forecast-tmw">
+            <div class="forecast-tmw-icon">
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="forecast-tmw-con">
+              <h3>Tomorrow</h3>
+              <div class="forecast-tmw_temp">
+                18°
+                <span class="celfah">
+                  <span class="celsius">C</span> |
+                  <span class="fahrenheit">F</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row forecast-nxt-days">
+            <div class="col-3 nxt-day-icon">
+              <i class="fas fa-cloud-sun"> </i>
+            </div>
+            <div class="col-3 nxt-day-icon">
+              <i class="fas fa-cloud-sun"> </i>
+            </div>
+            <div class="col-3 nxt-day-icon">
+              <i class="fas fa-cloud-sun"> </i>
+            </div>
+            <div class="col-3 nxt-day-icon">
+              <i class="fas fa-cloud-sun"> </i>
+            </div>
+            <div class="col-3 forecast-nxt temp">
+              18°
+              <br />
+              <span class="celfar">
+                <span class="celcius">
+                  C
+                </span>
+                |
+                <span class="fahrenheit">
+                  F
+                </span>
+              </span>
+            </div>
+            <div class="col-3 forecast-nxt temp">
+              18°
+              <br />
+              <span class="celfar">
+                <span class="celcius">
+                  C
+                </span>
+                |
+                <span class="fahrenheit">
+                  F
+                </span>
+              </span>
+            </div>
+            <div class="col-3 forecast-nxt temp">
+              18°
+              <br />
+              <span class="celfar">
+                <span class="celcius">
+                  C
+                </span>
+                |
+                <span class="fahrenheit">
+                  F
+                </span>
+              </span>
+            </div>
+            <div class="col-3 forecast-nxt temp">
+              18°
+              <br />
+              <span class="celfar">
+                <span class="celcius">
+                  C
+                </span>
+                |
+                <span class="fahrenheit">
+                  F
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/src/index.js"></script>
+  </body>
+</html>
