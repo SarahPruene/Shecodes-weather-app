@@ -156,7 +156,7 @@ a:hover {
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.8)
     ),
-    url("./img/sunny.jpg");
+    url("img/sunny.jpg");
   background-size: cover;
   background-position: top center;
   z-index: 1;
