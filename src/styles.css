@@ -256,8 +256,11 @@ a:hover {
 small {
   color: #333;
   text-align: center;
+  width: 100vw;
+  height: auto;
+  font-size: 24px;
 }
 
 small a {
-  color: #ece91a;
+  color: #1198f3;
 }
