@@ -252,3 +252,8 @@ a:hover {
   margin: 1px;
   border-radius: none;
 }
+
+small {
+  color: #333;
+  text-align: center;
+}
