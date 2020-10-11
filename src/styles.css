@@ -257,3 +257,7 @@ small {
   color: #333;
   text-align: center;
 }
+
+small a {
+  color: #ece91a;
+}
