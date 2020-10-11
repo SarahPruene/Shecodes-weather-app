@@ -259,6 +259,7 @@ small {
   width: 100vw;
   height: auto;
   font-size: 24px;
+  margin: 0 auto;
 }
 
 small a {
